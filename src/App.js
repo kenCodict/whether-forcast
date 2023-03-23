@@ -17,10 +17,10 @@ function App() {
   } = useSelector(state => state.location)
 useEffect(() => {
 dispatch(getWeatherForcast())
-}, [selectedEvent])
+}, [selectedEvent, dispatch])
 useEffect(() => {
   dispatch(getWeatherForcast())
-}, [])
+}, [dispatch])
   return (
     <div className="app max-w-full">
       <Header />

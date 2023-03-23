@@ -12,13 +12,7 @@ const SideBar = () => {
     const filterState = (e) => {
         
         setSearchInput(e.target.value)
-        const items = NigeriaStates.filter((item) => {
-            const {name} = item
-            if (name.toLowerCase().includes(e.target.value.toLowerCase())) {
-                return item
-            }
-
-        })
+        const items = NigeriaStates.filter((item) => item.name.toLowerCase().includes(e.target.value.toLowerCase()))
         setFilteredValues(items)
     }
 

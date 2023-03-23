@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useRef } from 'react';
+
 
 export default function TextInput(
     { type = 'text', name, id, value, className, autoComplete, required, isFocused, handleChange, checked, disabled, placeholder},
