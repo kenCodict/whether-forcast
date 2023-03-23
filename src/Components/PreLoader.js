@@ -8,7 +8,7 @@ const Preloader = () => {
         <div className="w-[200px] rotate text-xs h-[200px] rounded-full border-[10px] border-dashed border-gray-900 dark:border-gray-100">
         </div>
         <div className="absolute  w-[180px] h-[180px] rounded-full flex items-center justify-center">
-            <p className="text-2xl font-black text-red-700"><span className="text-white">Ken</span>Codict</p>
+            <p className="text-2xl font-black text-red-700"><span className="text-green-700">Ken</span>Codict</p>
         </div>
             </div>
   )

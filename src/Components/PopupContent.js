@@ -62,7 +62,7 @@ const {description, icon} = weather[0]
                     main:{feels_like, temp},
                     weather,
                     wind: {deg, gust, speed}}) => {
-                        
+                        const {description, icon} = weather[0]
                         return (
                             <div className="flex items-center justify-center bg-gray-50 gap-2 text-green-900 w-full my-2 shadow-lg rounded-lg">
                             <div className="">
