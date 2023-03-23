@@ -16,7 +16,7 @@ const Map = () => {
    }
    
   return (
-    <div className='h-[100vh] w-screen'> 
+    <div className='h-[100vh] max-w-full'> 
     <ReactMap
   initialViewState={ { ...viewPort }}
     mapboxAccessToken = {env.REACT_APP_MAP_API_KEY}

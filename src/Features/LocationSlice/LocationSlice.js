@@ -13,7 +13,7 @@ viewPort: {
     latitude: 8.831122799397733,
     longitude: 7.172467300000001,
     zoom: 7,
-    width: "100vw",
+    width: "100%",
     height: "100vh",
     pitch: 50,
 },

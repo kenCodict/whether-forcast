@@ -5,7 +5,7 @@ import Preloader from './PreLoader'
 const Main = () => {
     const {isloading} = useSelector(state => state.location)
   return (
-    <div className='main'>
+    <div className='main max-w-full'>
        {
         isloading ? <Preloader />  : <Map />
        }

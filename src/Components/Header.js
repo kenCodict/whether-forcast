@@ -10,9 +10,9 @@ const Header = () => {
     dispatch(setOpenSideBar(!openSideBar))
   }
   return (
-    <div className='bg-green-700 h-[80px] w-screen flex items-center p-3 text-[20px] justify-center  header uppercase '>
-        <div className=" text-white flex items-center p-3 text-[20px] justify-center space-x-2 gap-2 uppercase flex-1">
-        <FaCloud size={40} /> Nigeria Weather Forcast
+    <div className='bg-green-700 h-[80px] max-w-full flex items-center p-3 text-[20px] justify-center  header uppercase '>
+        <div className=" text-white flex items-center p-3 lg:text-[20px] sm:text-lg text-sm justify-center space-x-2 gap-2 uppercase flex-1">
+        <FaCloud size={40} /> <p className="text-center">Nigeria Weather Forcast</p>
         </div>
         {/* <FaFire />Extreme Weather Event */}
         <button className="text-4xl text-white mx-5 border-transparent active:outline-none w-fit bg-transparent lg:hidden" onClick={SideBar}>

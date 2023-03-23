@@ -28,7 +28,7 @@ const SideBar = () => {
         latitude: Number(item.lat),
         longitude: Number(item.long),
         zoom: 7,
-        width: "100vw",
+        width: "100%",
         height: "100vh",
         pitch: 50,
     }))
