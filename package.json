@@ -2,6 +2,7 @@
   "name": "whether-forcast",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://kencodict-001-site1.atempurl.com/",
   "dependencies": {
     "@iconify/icons-emojione": "^1.2.6",
     "@reduxjs/toolkit": "^1.9.3",
