@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { FaLandmark, FaLocationArrow, FaLongArrowAltDown, FaMap, FaMapMarker, FaMapMarkerAlt, FaWindowClose } from 'react-icons/fa';
+import {  FaMapMarkerAlt, FaWindowClose } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux'
-import { getWeatherForcast } from "../Features/LocationSlice/LocationSlice";
-import {setEventData,setSelectedEvent, setRelenderMarkes, setLenderEvent,setViewPort,setOpenSideBar} from "../Features/LocationSlice/LocationSlice";
+import {setSelectedEvent, setViewPort,setOpenSideBar} from "../Features/LocationSlice/LocationSlice";
 import TextInput from './textInput';
 const SideBar = () => {
     const [searchInput, setSearchInput] = useState();

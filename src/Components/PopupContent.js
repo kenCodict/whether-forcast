@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight, FaArrowAltCircleUp, FaCloud } from 'react-icons/fa'
+import {  FaArrowAltCircleRight, FaArrowAltCircleUp } from 'react-icons/fa'
 // http://openweathermap.org/img/w/10d.png
 const PopupContent = ({eventData}) => {
 const {city, list} = eventData
 const [displayForcast, setDisplayForcast] = useState(false)
 console.log(eventData); 
 const {
-    clouds, 
-    dt_txt, 
-    main:{feels_like, grnd_level, humidity, pressure, sea_level,temp, temp_max, temp_min},
+    main:{feels_like, temp},
     weather,
     wind: {deg, gust, speed}
 } = list[0]
@@ -18,7 +16,7 @@ const WindDirecton = ({dir}) => {
         value === 0 | value === 360 ? "E" : value > 0 & value < 90 ? "NE" : value === 90 ? "N" : value > 90 & value < 180 ? "NW" : value === 180 ? "W" : value > 180 & value < 270 ? "SW" : value === 270 ? "S" : "SE"
     )
 }
-const {description, icon, main} = weather[0]
+const {description, icon} = weather[0]
   return (
     <div className='flex flex-col bg-green-900 rounded-md duration-500 max-h-[300px] overflow-auto'>
         <div className="flex items-center justify-center text-gray-50 gap-2 w-full ">
@@ -60,11 +58,11 @@ const {description, icon, main} = weather[0]
            </div>
         {displayForcast && <div className="">
             {
-                list.map(({clouds, 
-                    dt_txt, 
-                    main:{feels_like, grnd_level, humidity, pressure, sea_level,temp, temp_max, temp_min},
+                list.map(({ dt_txt, 
+                    main:{feels_like, temp},
                     weather,
                     wind: {deg, gust, speed}}) => {
+                        
                         return (
                             <div className="flex items-center justify-center bg-gray-50 gap-2 text-green-900 w-full my-2 shadow-lg rounded-lg">
                             <div className="">

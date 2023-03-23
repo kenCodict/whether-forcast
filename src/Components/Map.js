@@ -1,18 +1,14 @@
-import React, { useState, useRef, useEFfect, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import ReactMap, { Marker, Popup } from 'react-map-gl';
 import env from "react-dotenv";
-import {setEventData,setSelectedEvent, setRelenderMarkes, setLenderEvent,setViewPort, getWeatherForcast} from "../Features/LocationSlice/LocationSlice";
-import { FaCloud, FaMapMarkerAlt } from 'react-icons/fa';
+import {setViewPort} from "../Features/LocationSlice/LocationSlice";
+import {  FaMapMarkerAlt } from 'react-icons/fa';
 import PopupContent from './PopupContent';
 const Map = () => {
-  const [selectedState, setSelectedState] = useState(null)
+ 
   const [pop, setPop] = useState(false)
-  const {eventData,
-    selectedEvent,
-    relenderMarkers,
-    isloading,
-    lenderEvent, viewPort, NigeriaStates} = useSelector(state => state.location)
+  const {eventData, viewPort} = useSelector(state => state.location)
     const dispatch = useDispatch()
    const act = (e) => {
     e.preventDefault()
