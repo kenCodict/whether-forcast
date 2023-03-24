@@ -4,7 +4,6 @@ import {  FaArrowAltCircleRight, FaArrowAltCircleUp } from 'react-icons/fa'
 const PopupContent = ({eventData}) => {
 const {city, list} = eventData
 const [displayForcast, setDisplayForcast] = useState(false)
-console.log(eventData); 
 const {
     main:{feels_like, temp},
     weather,

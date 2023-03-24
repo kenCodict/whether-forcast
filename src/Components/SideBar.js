@@ -17,7 +17,6 @@ const SideBar = () => {
     }
 
     const handleClick = (item) => {
-        console.log(item);
        dispatch( setViewPort({
         latitude: Number(item.lat),
         longitude: Number(item.long),
